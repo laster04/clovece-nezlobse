@@ -4,6 +4,7 @@ public class Figure {
     private int figureIndex;
     private Player player;
     private Color color;
+    private Field currentField;
 
     public Figure(int figureIndex, Player player, Color color) {
         this.figureIndex = figureIndex;
@@ -33,5 +34,13 @@ public class Figure {
 
     public void setPlayer(Player player) {
         this.player = player;
+    }
+
+    public Field getCurrentField() {
+        return currentField;
+    }
+
+    public void setCurrentField(Field currentField) {
+        this.currentField = currentField;
     }
 }

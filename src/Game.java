@@ -34,8 +34,19 @@ public class Game {
                 int roll = Dice.roll();
                 if (!player.isOnField() && roll != 6) {
                     continue;
+                } else {
+                    player.setOnField(true);
+                    roll = Dice.roll();
+                    Figure playerFigure = player.getFigures().get(0);
+
                 }
             }
+        }
+    }
+
+    private void setFigureOnFields(Figure figure, int steps) {
+        for (Field field : this.fields) {
+
         }
     }
 
